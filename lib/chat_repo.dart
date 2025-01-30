@@ -10,7 +10,6 @@ class ChatRepository {
     required Function(StompFrame) onConnect,
     required Function(dynamic) onError,
   }) {
-    print(apiKey);
     return StompClient(
       config: StompConfig(
         url: apiKey,
